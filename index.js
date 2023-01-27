@@ -5,6 +5,7 @@ const menuItems = document.querySelectorAll(".menu-item");
 const messagesNotification = document.querySelector("#messages-notification");
 const messages = document.querySelector(".messages");
 
+
 const message = messages.querySelectorAll(".message");
 const messageSearch = document.querySelector('#message-search');
 //Theme
@@ -31,7 +32,7 @@ menuItems.forEach(item=>{
         changeActiveItem();
         item.classList.add("active");
         if(item.id != "notifications"){
-            document.querySelector("notifications-popup").style.display = "none";
+            document.querySelector(".notifications-popup").style.display = "none";
         }
         else{
             document.querySelector(".notifications-popup").style.display = "block";
